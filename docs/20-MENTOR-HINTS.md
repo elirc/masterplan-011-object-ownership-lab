@@ -104,9 +104,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Make lookup visible without reading raw JSON.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Derive rows with property name and ownership; render safe text; compare fresh, shadowed and restored states.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Derive rows with property name and ownership; render safe text; compare fresh, shadowed and restored states. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: A callable inherited method is not mislabeled as absent.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: A callable inherited method is not mislabeled as absent. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose the columns and property vocabulary. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -114,9 +114,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Compare inherited data with own instance data.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Put a fictional category on the prototype; inspect both widgets; shadow it on only A.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Put a fictional category on the prototype; inspect both widgets; shadow it on only A. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: A's category override leaves B's inherited value unchanged.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: A's category override leaves B's inherited value unchanged. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose a clear category example. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -124,9 +124,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Show a change that intentionally reaches both unshadowed instances.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Save the original method in a scratch fixture; replace the prototype method; restore it explicitly after the experiment.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Save the original method in a scratch fixture; replace the prototype method; restore it explicitly after the experiment. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: Both unshadowed widgets change while an own shadow remains independent.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: Both unshadowed widgets change while an own shadow remains independent. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose the temporary shared behavior. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -134,9 +134,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Distinguish a Widget from a lookalike object.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Call the prototype method with a plain object containing name; observe the guard; explain the deliberate receiver contract.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Call the prototype method with a plain object containing name; observe the guard; explain the deliberate receiver contract. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: A matching field name alone does not satisfy instanceof Widget.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: A matching field name alone does not satisfy instanceof Widget. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Decide whether duck typing would be a useful alternative branch. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -144,9 +144,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Explain why a property list may differ from an own-key list.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Inspect Object.keys and a controlled for-in example; label inherited entries; avoid modifying global prototypes.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Inspect Object.keys and a controlled for-in example; label inherited entries; avoid modifying global prototypes. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: The worksheet distinguishes visibility during enumeration from own-property status.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: The worksheet distinguishes visibility during enumeration from own-property status. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose the exact property set to inspect. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -154,9 +154,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Prevent a learner confusing displayed data with the live instance.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Return a new diagnostic object; edit the snapshot in a scratch test; compare the real widget afterward.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Return a new diagnostic object; edit the snapshot in a scratch test; compare the real widget afterward. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: Changing a diagnostic name field does not rename the widget.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: Changing a diagnostic name field does not rename the widget. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose how to communicate snapshot semantics. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -164,9 +164,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Practice call-expression reading.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Write three calls using the same function; ask for receiver and output separately; place answers in a hints section.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Write three calls using the same function; ask for receiver and output separately; place answers in a hints section. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: The answer key explains lookup and receiver as separate steps.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: The answer key explains lookup and receiver as separate steps. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose one deliberately failing call. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -174,9 +174,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Explore equivalent behavior on a branch.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Recreate the small Widget with class syntax; keep the same per-instance field and shared method; compare ownership checks.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Recreate the small Widget with class syntax; keep the same per-instance field and shared method; compare ownership checks. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: The explanation does not mistake new syntax for a new ownership policy.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: The explanation does not mistake new syntax for a new ownership policy. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose which differences deserve documentation. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -184,9 +184,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Explain the effect of deleting an own data field.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Delete A's name only in a scratch fixture; inspect describe output; decide a guard or recovery policy before changing production.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Delete A's name only in a scratch fixture; inspect describe output; decide a guard or recovery policy before changing production. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: The experiment identifies the missing data instead of blaming method lookup.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: The experiment identifies the missing data instead of blaming method lookup. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose whether deletion should be supported. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 

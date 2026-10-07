@@ -26,7 +26,7 @@ Read inspect before changing the UI. It asks whether properties are owned and al
 
 Trace delete a.describe in public/app.js. Removing the own entry does not remove the prototype entry. In a scratch console, compare delete with assigning undefined; the latter leaves an own property that still blocks lookup. Restore the working fixture by reloading rather than permanently modifying the reference while exploring.
 
-**Pause and produce evidence:** Call detached describe, then describe.call(A). Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
+**Pause and produce evidence:** Shadow A, then delete its own describe. Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
 
 ## Step 4: Separate function and receiver
 

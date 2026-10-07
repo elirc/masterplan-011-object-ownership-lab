@@ -6,7 +6,7 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 01: Rename only widget A
 
-**Hint 1 — ownership:** Begin from `Widget.prototype.describe`. Add a labeled rename field; reuse the constructor name rule in a small shared validation function before changing A.name.
+**Hint 1 — ownership:** Begin from the name check in the `Widget` constructor. Add a labeled rename field; reuse the constructor name rule in a small shared validation function before changing A.name.
 
 **Hint 2 — reasoning:** Revisit the decision “Share behavior, keep values per instance”. Ask yourself: What changes if you allocate a new function inside every constructor call?
 
@@ -16,9 +16,9 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 02: Add a third widget
 
-**Hint 1 — ownership:** Begin from `Widget.prototype.describe`. Create a third independent instance and include it in the inspection output without creating another prototype method.
+**Hint 1 — ownership:** Begin from the `a`/`b` construction and `render` in `public/app.js`. Create a third independent instance and include it in the inspection output without creating another prototype method.
 
-**Hint 2 — reasoning:** Revisit the decision “Show shadowing with an own property”. Ask yourself: Why does assigning undefined fail to restore the inherited method?
+**Hint 2 — reasoning:** Revisit the decision “Share behavior, keep values per instance”. Ask yourself: What changes if you allocate a new function inside every constructor call?
 
 **Answer direction:** A defensible solution demonstrates this observable result: All fresh widgets share describe; shadowing A does not affect C. The exact code is not prescribed. If your change achieves that result by changing an unrelated original rule, revise either the implementation or the story contract explicitly.
 
@@ -26,9 +26,9 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 03: Show the lookup route
 
-**Hint 1 — ownership:** Begin from `Widget.prototype.describe`. Render an own-versus-inherited explanation for describe using Object.hasOwn.
+**Hint 1 — ownership:** Begin from `inspect` in `public/core.js`. Render an own-versus-inherited explanation for describe using Object.hasOwn.
 
-**Hint 2 — reasoning:** Revisit the decision “Fail visibly on a lost receiver”. Ask yourself: Which expression supplies this in a.describe(), and what supplies it in method.call(a)?
+**Hint 2 — reasoning:** Revisit the decision “Show shadowing with an own property”. Ask yourself: Why does assigning undefined fail to restore the inherited method?
 
 **Answer direction:** A defensible solution demonstrates this observable result: The explanation changes after shadow and restore and agrees with the displayed result. The exact code is not prescribed. If your change achieves that result by changing an unrelated original rule, revise either the implementation or the story contract explicitly.
 
@@ -36,9 +36,9 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 04: Restore all sample state
 
-**Hint 1 — ownership:** Begin from `Widget.prototype.describe`. Add one reset action that constructs fresh A and B and clears the diagnostic message.
+**Hint 1 — ownership:** Begin from the `a`/`b` declarations and `render` in `public/app.js`. Add one reset action that constructs fresh A and B and clears the diagnostic message.
 
-**Hint 2 — reasoning:** Revisit the decision “Share behavior, keep values per instance”. Ask yourself: What changes if you allocate a new function inside every constructor call?
+**Hint 2 — reasoning:** Revisit the decision “Show shadowing with an own property”. Ask yourself: Why does assigning undefined fail to restore the inherited method?
 
 **Answer direction:** A defensible solution demonstrates this observable result: After renaming or shadowing, reset returns the original names and sameMethod true. The exact code is not prescribed. If your change achieves that result by changing an unrelated original rule, revise either the implementation or the story contract explicitly.
 
@@ -46,9 +46,9 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 05: Compare a bound callback
 
-**Hint 1 — ownership:** Begin from `Widget.prototype.describe`. Add a button using describe.bind(a) and display its result after a later A rename.
+**Hint 1 — ownership:** Begin from the `#bind` handler in `public/app.js`. Add a button using describe.bind(a) and display its result after a later A rename.
 
-**Hint 2 — reasoning:** Revisit the decision “Show shadowing with an own property”. Ask yourself: Why does assigning undefined fail to restore the inherited method?
+**Hint 2 — reasoning:** Revisit the decision “Fail visibly on a lost receiver”. Ask yourself: Which expression supplies this in a.describe(), and what supplies it in method.call(a)?
 
 **Answer direction:** A defensible solution demonstrates this observable result: The bound function keeps A as receiver while reading A's current name. The exact code is not prescribed. If your change achieves that result by changing an unrelated original rule, revise either the implementation or the story contract explicitly.
 
@@ -58,7 +58,7 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 **Hint 1 — ownership:** Begin from `Widget.prototype.describe`. Create a separate diagnostic example showing why own undefined still shadows. Keep the working widgets recoverable.
 
-**Hint 2 — reasoning:** Revisit the decision “Fail visibly on a lost receiver”. Ask yourself: Which expression supplies this in a.describe(), and what supplies it in method.call(a)?
+**Hint 2 — reasoning:** Revisit the decision “Show shadowing with an own property”. Ask yourself: Why does assigning undefined fail to restore the inherited method?
 
 **Answer direction:** A defensible solution demonstrates this observable result: The example distinguishes property existence from value and includes a safe reset. The exact code is not prescribed. If your change achieves that result by changing an unrelated original rule, revise either the implementation or the story contract explicitly.
 

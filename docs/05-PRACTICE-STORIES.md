@@ -6,8 +6,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 
 ## Story 01: Rename only widget A
 
-**User need:** As a learner or user of Object Ownership Lab, I want this small improvement so the behavior is easier to use, explain or verify.
-
 **Feature boundary:** Add a labeled rename field; reuse the constructor name rule in a small shared validation function before changing A.name.
 
 **Implementation plan:**
@@ -26,8 +24,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 **Stretch only after completion:** add one adversarial example that a plausible but incorrect solution would fail. Explain why that example is more informative than adding three ordinary examples.
 
 ## Story 02: Add a third widget
-
-**User need:** As a learner or user of Object Ownership Lab, I want this small improvement so the behavior is easier to use, explain or verify.
 
 **Feature boundary:** Create a third independent instance and include it in the inspection output without creating another prototype method.
 
@@ -48,8 +44,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 
 ## Story 03: Show the lookup route
 
-**User need:** As a learner or user of Object Ownership Lab, I want this small improvement so the behavior is easier to use, explain or verify.
-
 **Feature boundary:** Render an own-versus-inherited explanation for describe using Object.hasOwn.
 
 **Implementation plan:**
@@ -68,8 +62,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 **Stretch only after completion:** add one adversarial example that a plausible but incorrect solution would fail. Explain why that example is more informative than adding three ordinary examples.
 
 ## Story 04: Restore all sample state
-
-**User need:** As a learner or user of Object Ownership Lab, I want this small improvement so the behavior is easier to use, explain or verify.
 
 **Feature boundary:** Add one reset action that constructs fresh A and B and clears the diagnostic message.
 
@@ -90,8 +82,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 
 ## Story 05: Compare a bound callback
 
-**User need:** As a learner or user of Object Ownership Lab, I want this small improvement so the behavior is easier to use, explain or verify.
-
 **Feature boundary:** Add a button using describe.bind(a) and display its result after a later A rename.
 
 **Implementation plan:**
@@ -110,8 +100,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 **Stretch only after completion:** add one adversarial example that a plausible but incorrect solution would fail. Explain why that example is more informative than adding three ordinary examples.
 
 ## Story 06: Document an own undefined property
-
-**User need:** As a learner or user of Object Ownership Lab, I want this small improvement so the behavior is easier to use, explain or verify.
 
 **Feature boundary:** Create a separate diagnostic example showing why own undefined still shadows. Keep the working widgets recoverable.
 
